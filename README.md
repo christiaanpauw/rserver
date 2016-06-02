@@ -1,0 +1,14 @@
+# Docker for development for Shiny Server and OpenCV 3 
+
+This is a Dockerfile for Shiny Server on Debian "testing". It is based on the `shiny` image.
+
+The image contains OpenCV 3, its build dependencies, and few other R libraries pre-installed
+
+- `ggplot`
+- `png`
+- `gridExtra`
+
+It has CRAN-like repository called `ysz` on disk. You can install your work in progress packages using `install.packages` from there.
+
+[How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
+
