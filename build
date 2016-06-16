@@ -1,0 +1,5 @@
+#!/bin/sh
+echo 'Password? \c'
+read PASSWD
+sudo docker build --build-arg PASSWD=$PASSWD -t rserver .
+
